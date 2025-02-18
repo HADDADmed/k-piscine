@@ -1,4 +1,4 @@
-git push --set-upstream origin main# Exercice 1 Day 1
+# Exercice 1 Day 1
 
 By Haddad Mohammed
 
