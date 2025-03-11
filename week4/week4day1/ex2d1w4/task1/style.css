@@ -1,0 +1,20 @@
+ 
+ body {
+    font: 1.2em / 1.5 sans-serif;
+  }
+  
+  .float {
+    margin: 20px 1em 40px 2em;
+    padding: 1em;
+    border: 5px solid  black;
+    
+  }
+  
+  
+.float1 {
+    float: right;
+}
+
+.float2 {
+    float: left;
+}
