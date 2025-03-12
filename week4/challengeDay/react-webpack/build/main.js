@@ -1,0 +1,1 @@
+(()=>{const e=document.createElement("div");e.innerHTML="Hello, webpack! From Keiken !",document.body.appendChild(e)})();
