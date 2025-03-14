@@ -381,9 +381,6 @@ export default App;
 - **Prop Name**: `children` is a special prop passed to components.
 - **Content**: Represents elements/components nested between a component's opening and closing tags.
     
-    jsx
-    
-    Copy
     
     ```
     <Parent> <Child /> </Parent> // `Child` is `children` in `Parent`
@@ -396,10 +393,7 @@ export default App;
 
 - **Via Props**: Accessible via `props.children` in functional components.
     
-    jsx
-    
-    Copy
-    
+
     ```
     const Parent = (props) => <div>{props.children}</div>;
     ```
@@ -411,9 +405,6 @@ export default App;
 
 - **Direct Rendering**: Inject children into JSX.
     
-    jsx
-    
-    Copy
     
     ```
     const Card = ({ children }) => <div className="card">{children}</div>;
@@ -426,9 +417,6 @@ export default App;
 
 - **Layout Components**: Use children to build reusable layouts (e.g., modals, grids).
     
-    jsx
-    
-    Copy
     
     ```
     <Modal> <Form /> </Modal>
@@ -436,9 +424,6 @@ export default App;
     
 - **Wrapper Components**: Wrap children with styles or logic (e.g., hover effects, themes).
     
-    jsx
-    
-    Copy
     
     ```
     <ThemeProvider> <App /> </ThemeProvider>
@@ -453,9 +438,6 @@ export default App;
     - `React.Children.map(children, fn)`: Safely iterate over children (handles arrays, single elements).
     - `React.Children.count(children)`: Count the number of children.
     
-    jsx
-    
-    Copy
     
     ```
     const List = ({ children }) => (
@@ -467,9 +449,6 @@ export default App;
     
 - **Cloning Elements**: Modify children with props using `React.cloneElement`.
     
-    jsx
-    
-    Copy
     
     ```
     const EnhancedChild = React.cloneElement(child, { newProp: "value" });
@@ -482,19 +461,12 @@ export default App;
 
 - **Dynamic Content**: Pass a function to `children` for dynamic rendering.
     
-    jsx
-    
-    Copy
     
     ```
     <DataFetcher>
       {(data) => <div>{data}</div>}
     </DataFetcher>
     ```
-    
-    jsx
-    
-    Copy
     
     ```
     const DataFetcher = ({ children }) => {
@@ -510,9 +482,6 @@ export default App;
 
 - **PropTypes**: Restrict allowed child types.
     
-    jsx
-    
-    Copy
     
     ```
     import PropTypes from 'prop-types';
@@ -527,10 +496,7 @@ export default App;
 - **Children Can Be Any Type**: Strings, elements, arrays, fragments, or functions.
 - **Immutable**: Children are read-only. Use `React.cloneElement` to modify them.
 - **Empty Children**: Check `children` exists before rendering.
-    
-    jsx
-    
-    Copy
+
     
     ```
     {children || <FallbackComponent />}
@@ -541,9 +507,7 @@ export default App;
 
 ### **Example: Reusable Card Component**
 
-jsx
 
-Copy
 
 ```
 const Card = ({ children, title }) => (
